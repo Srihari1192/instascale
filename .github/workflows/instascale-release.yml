@@ -73,8 +73,8 @@ jobs:
       with:
         commit_message: Update go.mod and go.sum to MCAD ${{ github.event.inputs.mcad-version }}
         file_pattern: 'go.mod go.sum'
-        create_branch: true
         branch: ${{ env.PR_BRANCH }}
+        create_branch: true
 
     - name: Create a Pull request with code changes
       run: |
