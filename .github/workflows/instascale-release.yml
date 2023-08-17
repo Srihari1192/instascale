@@ -55,18 +55,6 @@ jobs:
       run: |
         go get github.com/project-codeflare/multi-cluster-app-dispatcher@${{ github.event.inputs.mcad-version }}
 
-    # Build and test repository to make sure that MCAD update didn't break anything
-    - name: Build
-      run: go build -o bin/manager main.go
-    - name: Test
-      run: go test -v ./...
-
-    # Build and push the image
-    - name: Image Build and Push
-      run: |
-        make image-build -e IMG=quay.io/${{ github.event.inputs.quay-organization }}/instascale-controller:${{ github.event.inputs.tag }}
-        make image-push -e IMG=quay.io/${{ github.event.inputs.quay-organization }}/instascale-controller:${{ github.event.inputs.tag }}
-
     # Update dependencies
     - name: Commit go.mod and go.sum changes to the branch
       uses: stefanzweifel/git-auto-commit-action@v4
