@@ -67,7 +67,7 @@ jobs:
     - name: Create a Pull request with code changes
       run: |
           GIT_BRANCH=${GITHUB_REF#refs/heads/}
-          gh pr create --base "$GIT_BRANCH" --fill --head "${{ env.PR_BRANCH }}" --label "lgtm" --label "approve" --title "Update go.mod and go.sum to ${{ github.event.inputs.mcad-version }}" --body "Updating the go.mod and go.sum files to MCAD ${{ github.event.inputs.mcad-version }}."
+          gh pr create --base "$GIT_BRANCH" --fill --head "${{ env.PR_BRANCH }}" --label "lgtm" --label "approve"
       env:
         GITHUB_TOKEN: ${{ secrets.CODEFLARE_MACHINE_ACCOUNT_TOKEN }}
 
