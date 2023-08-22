@@ -77,3 +77,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ github.TOKEN }}
 
+    - name: Delete the PR branch
+      run: |
+          gh branch delete "${{ env.PR_BRANCH }}"
+      env:
+        GITHUB_TOKEN: ${{ secrets.CODEFLARE_MACHINE_ACCOUNT_TOKEN }}
