@@ -419,6 +419,8 @@ github.com/project-codeflare/multi-cluster-app-dispatcher v1.31.0 h1:vq4fAuvlv4Z
 github.com/project-codeflare/multi-cluster-app-dispatcher v1.31.0/go.mod h1:fmbU5LuV1Z2Sbu1FCEoVuw8qxDFcalXvkPyMfGZHHTc=
 github.com/project-codeflare/multi-cluster-app-dispatcher v1.32.0 h1:17lwqvxcWBTi9245lVZgJPvksGwAGA58s8dl7PzpbyE=
 github.com/project-codeflare/multi-cluster-app-dispatcher v1.32.0/go.mod h1:fmbU5LuV1Z2Sbu1FCEoVuw8qxDFcalXvkPyMfGZHHTc=
+github.com/project-codeflare/multi-cluster-app-dispatcher v1.33.0 h1:6a+MnxcFSlheC7RIPGg3s/QCt5+7dD8mJKwdpST7i70=
+github.com/project-codeflare/multi-cluster-app-dispatcher v1.33.0/go.mod h1:0J0BDSaIN5lvlmgw+32FcMqe8SflXHtHByUbHmPl4w8=
 github.com/project-codeflare/multi-cluster-app-dispatcher v1.33.1-0.20230809102455-ab92337aadff h1:FFjhRjektX6FbuQ1ygzgjQraj1vGSUXCmDQHlA3ncsA=
 github.com/project-codeflare/multi-cluster-app-dispatcher v1.33.1-0.20230809102455-ab92337aadff/go.mod h1:h4dPKbrJwBYvnSZFxGrVRZHfMUROaBO8YgdHFfDsSD8=
 github.com/prometheus/client_golang v0.9.1/go.mod h1:7SWBe2y4D6OKWSNQJUaRYU/AaXPKyh/dDVn+NZz0KFw=
