@@ -79,6 +79,6 @@ jobs:
 
     - name: Delete the PR branch
       run: |
-          gh branch delete "${{ env.PR_BRANCH }}"
+          git push origin --delete "${{ env.PR_BRANCH }}"
       env:
         GITHUB_TOKEN: ${{ secrets.CODEFLARE_MACHINE_ACCOUNT_TOKEN }}
